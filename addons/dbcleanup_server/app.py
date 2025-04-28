@@ -23,7 +23,7 @@ def cleanup_db():
         conn.commit()
         cursor.close()
         conn.close()
-        return jsonify({"cleanup": "success"})
+        return jsonify({"cleanup": "success"})  # <<<<<< THIS IS THE IMPORTANT RETURN
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
