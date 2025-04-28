@@ -1,0 +1,17 @@
+name: "DBCleanup REST Server"
+version: "1.0"
+slug: "dbcleanup_server"
+description: "A lightweight REST API service to cleanup and optimize MariaDB automatically inside Home Assistant."
+startup: services
+boot: auto
+host_network: true
+options: {}
+schema: {}
+arch:
+  - amd64
+  - aarch64
+  - armv7
+init: false
+hassio_api: true
+hassio_role: default
+privileged: []
